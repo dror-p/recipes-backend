@@ -205,7 +205,7 @@ async createRecipe(recipe: Recipe): Promise<Recipe> {
         LEFT JOIN ingredients i ON r.id = i.recipe_id
         LEFT JOIN steps s ON r.id = s.recipe_id
         WHERE r.id = $1
-        ORDER BY i.id, s.id ASC
+        ORDER BY i.id, s.id
       `;
   
       const result = await client.query(query, [recipeId]);

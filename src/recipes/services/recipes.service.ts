@@ -35,6 +35,7 @@ export class RecipesService {
           recipes
           LEFT JOIN ingredients ON ingredients.recipe_id = recipes.id
           LEFT JOIN steps ON steps.recipe_id = recipes.id
+        ORDER BY recipes.id, ingredients.id, steps.id
       `;
       const result = await client.query(query);
   

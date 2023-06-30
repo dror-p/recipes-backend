@@ -16,7 +16,7 @@ A cool nestJS app
 
 * git clone "https://github.com/dror-p/recipes-backend.git"
 * Open the folder in terminal
-* cd transmit-backend
+* cd recipes-backend
 * npm install
 * npm run start
 * go to http://localhost:3000
